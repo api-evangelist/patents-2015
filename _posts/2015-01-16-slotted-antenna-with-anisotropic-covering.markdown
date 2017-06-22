@@ -1,0 +1,41 @@
+---
+
+title: Slotted antenna with anisotropic covering
+abstract: An antenna includes a tubular, conductive radiator having a longitudinal slot formed therein from a first end of the conductive radiator to a second end of the conductive radiator. An antenna feed can be joined to the conductive radiator adjacent to and across the slot. An anisotropic plate is positioned a uniform distance from the conductive radiator, centered above the slot. The plate extends beyond the length of the radiator and is electrically insulated therefrom. An anisotropic tube surrounds the plate and radiator. The anisotropic tube is electrically insulated from the plate and radiator. In use, this antenna gives enhanced bandwidth over ordinary slotted antennas. This can also be applied to preexisting slotted antennas for enhanced bandwidth.
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=09407010&OS=09407010&RS=09407010
+owner: THE UNITED STATES OF AMERICA AS REPRESENTED BY THE SECRETARY OF THE NAVY
+number: 09407010
+owner_city: Washington
+owner_country: US
+publication_date: 20150116
+---
+The invention described herein may be manufactured and used by or for the Government of the United States of America for governmental purposes without the payment of any royalties thereon or therefor.
+
+Slotted cylinder antennas are popular antennas for use in line of sight communications systems especially where the carrier frequency exceeds 300 MHz. provides a diagram of a prior art slotted cylinder antenna . Antenna includes a metallic cylinder having slot cut into the wall of the cylinder . Cylinder can be any thickness as long as skin effects are avoided. Slot is parallel to an axis of cylinder . In the antenna shown slot extends the entire length of the cylinder . The interior of the cylinder or cavity is typically filled with air but another dielectric material can be used. shows an end fed version of this antenna but this antenna can also be center fed. In the end fed version a transmission line is provided through the cylinder and connected across the slot near one end of the slot . Transmission line can be either a balanced line such as a twisted pair or an unbalanced line such as a length of coaxial line shown . In either case the feeding transmission line must have two conductors in order to connect across slot . The optimal frequency of this antenna is given by the length of the slot. The size of the cavity and the slot width govern bandwidth.
+
+It is a first object of the present invention to provide a compact antenna capable of transmitting and receiving.
+
+Another object is to provide such an antenna having broader band characteristics than heretofore known.
+
+Accordingly there is provided an antenna that includes a tubular conductive radiator having a longitudinal slot formed therein from a first end of the conductive radiator to a second end of the conductive radiator. An antenna feed can be joined to the conductive radiator adjacent to and across the slot. An anisotropic plate is positioned a uniform distance from the conductive radiator centered above the slot. The plate extends beyond the length of the radiator and is electrically insulated therefrom. An anisotropic tube surrounds the plate and radiator. The anisotropic tube is electrically insulated from the plate and radiator. In use this antenna gives enhanced bandwidth over ordinary slotted antennas. This can also be applied to preexisting slotted antennas for enhanced bandwidth.
+
+The interior regions of radiator portion and outer housing can be filled with a dielectric material having a low dielectric constant. This can be a gas such as air or a solid such as syntactic foam. A liquid having this property could also be used.
+
+Cylinder portion and outer housing are made from an anisotropic dielectric material. The dielectric tensor of both the cylinder portion and outer housing are engineered to impact the electric field that is generated in radiator . Due to the way in which this antenna is fed by the coaxial line this electric field will be in the circumferential direction relative to the axis of the antenna. In the preferred embodiment the material has a uniaxial dielectric tensor in cylindrical coordinates in which 1 and 10. Off diagonal elements in the tensor are negligibly close to zero. Note that this tensor assumes a cylindrical coordinate system with the z axis coincident with the axis of the antenna. In another embodiment the tensor may be expressed in rectangular coordinates and be biaxial such that 1 and 1.
+
+The anisotropic dielectric material can be any such material known in the art having these characteristics. In one embodiment this material is a rectangular mesh having conductors oriented circumferentially and longitudinally printed on a dielectric backing. This material could also be a semiconductor material or a nanostructured material having these characteristics.
+
+The presence of the two anisotropic layers portion and housing increases the electrical length of the slot above its first resonance and keeps the equivalent magnetic current density relatively stable leading to improved impedance bandwidth.
+
+Measured plots of the voltage standing wave ratio VSWR for a prototype are shown in and . shows the VSWR for an antenna without anisotropic portion and cylinder . is the VSWR plot for antenna shown in . The VSWR of an antenna is typically used to define its bandwidth normally a value less than 2 1 is considered the maximum VSWR in the passband. In the valley indicated at indicates a narrow passband at 1.25 GHz. The antenna has relatively high impedance in the frequencies above this frequency. The data shown in indicates a first resonance in the valley shown at centered about 1.125 GHz. A second passband is given by the broad region above first resonance that runs from approximately 2.18 to 4.48 GHz. This is roughly one octave of bandwidth. This is more than is expected for a slotted cylinder antenna of this size.
+
+Both portion and outer housing are made from an anisotropic dielectric material. This material must have a much greater resistivity in the direction across the face of portion and housing perpendicular to slot . This corresponds to the cylindrical coordinates given with reference to . Like the cylindrical embodiment of rectangular embodiment of utilizes portion and outer housing to give enhanced bandwidth however it is believed that this embodiment will have a less effective pattern than that of the cylindrical embodiment. Other geometries can be used of this antenna depending on the space available and the required beam pattern of the antenna.
+
+This antenna has a greatly improved bandwidth meaning that it can be used to support multiple communications services where several separate antennas might have been needed before. Given that the slotted cylinder antenna is one that is sometimes used in cellular communications towers as well as in digital television broadcast towers a broadband version of this antenna might have significant applications in use on communications towers in order to host multiple services on a single antenna.
+
+This antenna can be made by modifying existing slotted antennas by retrofitting these antennas with anisotropic portions and anisotropic outer radiators. This will improve the bandwidth of the existing antenna and allow greater flexibility.
+
+It will be understood that many additional changes in the details materials steps and arrangement of parts which have been herein described and illustrated in order to explain the nature of the invention may be made by those skilled in the art within the principle and scope of the invention as expressed in the appended claims.
+
+The foregoing description of the preferred embodiments of the invention has been presented for purposes of illustration and description only. It is not intended to be exhaustive nor to limit the invention to the precise form disclosed and obviously many modification and variations are possible in light of the above teaching. Such modifications and variations that may be apparent to a person skilled in the art are intended to be included within the scope of this invention as defined by the accompanying claims.
+

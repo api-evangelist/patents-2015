@@ -1,0 +1,113 @@
+---
+
+title: Computer-aided video production triggered by media availability
+abstract: A method includes receiving multiple visual media items from one or more media databases, and associating the visual media items with one or more story topics. In response to deciding that a given story topic is associated with sufficient suitable visual media items, computer-aided creation of a video clip relating to the given story topic is initiated using the associated visual media items.
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=09659219&OS=09659219&RS=09659219
+owner: WOCHIT INC.
+number: 09659219
+owner_city: New York
+owner_country: US
+publication_date: 20150218
+---
+The present invention relates generally to multimedia generation and particularly to methods and systems for computer aided generation of multimedia content.
+
+An embodiment of the present invention that is described herein provides a method including receiving multiple visual media items from one or more media databases and associating the visual media items with one or more story topics. In response to deciding that a given story topic is associated with sufficient suitable visual media items computer aided creation of a video clip relating to the given story topic is initiated using the associated visual media items.
+
+In some embodiments associating the visual media items with the story topics includes determining a respective story topic for each visual media item and clustering the visual media items by finding textual similarities among the story topics.
+
+In some embodiments deciding that the given story topic is associated with sufficient suitable visual media items includes assigning ranks to the received visual media items evaluating a composite score for the given story topic based on the ranks of the visual media items associated with the given story topic and deciding that the given story topic is associated with sufficient suitable visual media items depending on the composite score. Assigning a rank to a given visual media item may include creating for the visual media item a list of one or more topics and calculating the rank for the given visual media item based on scores given to the topics.
+
+In an embodiment the scores are assigned to the topics based on at least one of social media popularity of the topics estimated sentiment toward the topics counts of media items in which the topics appear types of the media items in which the topics appear and availability of audio content relating to the topics. In an example embodiment assigning a rank to a given visual media item includes ranking the given visual media item based on social media popularity of the given visual media item.
+
+In another embodiment deciding that the given story topic is associated with sufficient suitable visual media items includes deciding that a social media popularity measure of the given story topic meets a predefined criterion. In yet another embodiment deciding that the given story topic is associated with sufficient suitable visual media items includes deciding that a count of the visual media items associated with the given story topic meets a predefined criterion. In still another embodiment deciding that the given story topic is associated with sufficient suitable visual media items includes detecting that the given story topic is undergoing a shift in sentiment.
+
+In some embodiments initiating the computer aided creation includes presenting to a human moderator one or more candidate story topics for which sufficient suitable visual media items are available and receiving from the human moderator a selection of the story topic for which the video clip is to be created. Presenting the candidate story topics may include displaying to the human moderator multiple windows which correspond to the respective candidate story topics and whose sizes depend on respective composite scores assigned to the candidate story topics.
+
+There is additionally provided in accordance with an embodiment of the present invention an apparatus including an interface and one or more processors. The interface is configured to receive multiple visual media items from one or more media databases. The processors are configured to associate the visual media items with one or more story topics and in response to deciding that a given story topic is associated with sufficient suitable visual media items to initiate computer aided creation of a video clip relating to the given story topic using the associated visual media items.
+
+There is further provided in accordance with an embodiment of the present invention a computer software product including a non transitory computer readable medium in which program instructions are stored which instructions when read by one or more processors cause the processors to receive multiple visual media items from one or more media databases to associate the visual media items with one or more story topics and in response to deciding that a given story topic is associated with sufficient suitable visual media items to initiate computer aided creation of a video clip relating to the given story topic using the associated visual media items.
+
+The present invention will be more fully understood from the following detailed description of the embodiments thereof taken together with the drawings in which 
+
+Embodiments of the present invention that are described herein provide improved methods and systems for computer aided generation of video clips. In some embodiments a video generation system receives media items such as video excerpts images Web pages audio excerpts and textual items from various sources and automatically generates video clips using these items.
+
+In the disclosed embodiments creation of a video clip is triggered by the availability of sufficient suitable visual media that can be used for generating the clip. The suitability of a visual media item can be quantified for example based on relevance to the story topic of the clip social media popularity or other factors. Typically the system automatically identifies the story topic of each visual data item e.g. based on metadata and clusters the visual media items per story topic. The system initiates creation of a video clip on a given story topic upon deciding that the story topic is associated with sufficient suitable visual media items.
+
+In one example flow the system derives a list of topics for each visual media item by analyzing the media items metadata. The system ranks the topics across different media assets based on factors such as relevance of each topic to a given asset and popularity of that asset on social media platforms. The system then assigns scores to the visual media items based on the ranks of their underlying topics. Finally the system ranks the story topics based on the scores of their associated visual media items. The highest ranking story topics are presented to a human moderator who chooses the story topics for which the system will generate video clips.
+
+The rationale behind the disclosed technique is that a video clip cannot be generated unless sufficient suitable visual media is available. Therefore it is advantageous to verify the media availability in advance. It is possible in principle to trigger video clip creation by other events e.g. in response to a story topic of interest. In such a solution however the system may spend resources in an attempt to generate a video clip only to discard it later for lack of sufficient suitable media.
+
+When triggering video clip creation by media availability the limited human and computer resources of the video generation system are spent only on clips whose generation is likely to succeed. The disclosed techniques are therefore particularly effective in large scale applications that generate a large volume of video clips possibly in real time.
+
+For example in many practical implementations the scarcest resource is the time and attention of human moderators. When using the disclosed techniques this resource is used efficiently because the moderators are presented only with candidate story topics that are likely to be converted successfully into video clips.
+
+In an example flow although not necessarily system may receive from a client system textual articles relating to various topics and create video clips for the textual articles provided that sufficient suitable visual media is available. The video clips are sent to client system . System communicates with client system over a communication network e.g. the Internet.
+
+In alternative embodiments however system may receive textual inputs from other sources or create video clips regardless of any textual input or any specific client system. System can thus be used in a variety of business models and modes of operation. Additional details of video generation processes that may be performed by system are addressed in U.S. patent application Ser. Nos. 14 170 621 and 14 214 964 which are assigned to the assignee of the present patent application and whose disclosures are incorporated herein by reference.
+
+In some embodiments system communicates over network with one or more media databases DBs so as to retrieve media assets . The media assets are also referred to as media items. Media items may comprise for example visual media items such as video excerpts still images Web page snapshots maps graphs or various graphical elements. Other non visual examples of media items may comprise for example audio excerpts textual excerpts social network information and many others. Media DBs may comprise for example content Web sites social network servers or any other suitable database.
+
+System typically presents candidate story topics and associated media assets to a human moderator . The moderator uses the presented information to select story topics for which the system is to generate video clips.
+
+System typically uses multiple moderators for handling a large throughput of video clips simultaneously. Moderator may also review and select media assets that will be included in the video clips or otherwise assist or supervise the automated generation process. The moderator thus produces moderator input which is fed back to system over network .
+
+In addition to moderator input system may further receive audio narration to accompany the video clip. The audio narration is produced by a narrator and provided to system over network . System typically uses multiple narrators for narrating the various textual inputs.
+
+Based on moderator input and audio narration system automatically produces video clip . In some embodiments the automatically generated video clip is verified by one of moderators before it is finally approved for release. Audio narration is also optionally verified for quality by moderators .
+
+In the example of system comprises an interface for communicating over network a media monitoring unit for obtaining and processing media assets a video creation unit for generating video clips and a Graphical User Interface GUI unit for interacting with moderators . Units and may be implemented for example using software running on one or more processors. The processors may or may not be collocated. For example GUI unit may be physically adjacent to moderator e.g. implemented on a terminal or workstation of the moderator.
+
+The system configuration shown in is an example configuration which is chosen purely for the sake of conceptual clarity. In alternative embodiments any other suitable system configuration can be used. For example the disclosed techniques need not necessarily be implemented by separate media monitoring video creation and GUI units and may be implemented using any desired number of units of any suitable functionality.
+
+The elements of system may be implemented using software using suitable hardware firmware or using a combination of hardware firmware and software elements. In some embodiments the functions of units and or may be implemented using one or more general purpose processors which are programmed in software to carry out the functions described herein. The software may be downloaded to the processors in electronic form over a network for example or it may alternatively or additionally be provided and or stored on non transitory tangible media such as magnetic optical or electronic memory.
+
+In some embodiments system identifies story topics for which sufficient suitable visual media items are available and presents these story topics to moderators as candidates for video clip creation. The description that follows presents one example method of carrying out this technique. This method however is depicted purely by way of example. In alternative embodiments any other suitable method or implementation can be used.
+
+Unit may monitor databases periodically for example every several minutes. Monitoring may be performed for example using suitable Application Programming Interfaces APIs by monitoring predefined hot folders or in any other suitable way. Each media item is typically accompanied with textual metadata such as title captions and or descriptive keywords.
+
+At a topic derivation step media monitoring unit constructs a list of one or more topics for each media item. Unit typically derives the lists of topics by performing contextual analysis on the textual metadata on the respective media items. Unit may also calculate or receive relevancy and sentiment measures for the topics. A relevance measure of a topic typically quantifies the relevance of the media item to the topic. A sentiment measure of a topic typically indicates the sentiment of users to that topic e.g. positive negative or neutral sentiment .
+
+In addition unit typically defines a story topic for each media item. The story topic is typically although not necessarily based on the title of the media item. Consider for example a video excerpt showing the Pope visiting Moscow. The phrase Pope visiting Moscow may serve as a story topic for this media item. A topic list that may be derived from the metadata of this media item may comprise for example the list Pope Moscow Russia Vladimir Putin Church .
+
+At a scoring step unit assigns ranks or scores to the topics and to the visual media items. In some embodiments media monitoring unit maintains a topic table which holds the topics and story topics of the received media items. Unit calculates and stores in the table various scores that are assigned to the topics. Scores that may be calculated and stored per topic may comprise for example the current and average sentiment toward the topic and social media popularity or other hotness measures of the topic. Popularity measures may comprise for example the number and types e.g. video vs. still images of media items in which the topic appears during various time windows.
+
+Unit typically updates the scores in the topic table in real time e.g. to reflect real time changes in sentiment and popularity. Updating may be performed for example by monitoring social network Web sites.
+
+In some embodiments unit calculates respective ranks for the visual media items. The rank assigned to a given media item is typically based on the scores of the topics appearing on the media item s topic list. In an embodiment the rank of a given media item also depends on additional factors such as availability of related audio content or social network popularity of the media item as projected by the media providers e.g. number of viewings on the social network site .
+
+The ranks and scores described above are depicted purely by way of example. In alternative embodiments unit may use any other suitable ranks or scores.
+
+At a clustering step unit clusters the visual media items by story topic. In an embodiment upon arrival of a new visual media item unit evaluates the textual distances between the title of the item and the existing story topics within a given time window. If the distance to an existing story topic is small unit adds the new item to the cluster of the existing story topic. If all distances are large unit concludes that the new media item relates to a new story topic and thus places the item in a new cluster.
+
+In an embodiment unit calculates a respective composite score for each story topic based on the ranks assigned to the visual media items belonging to the cluster of this story topic. As explained above the ranks of the visual media items in turn depend on the scores of the topics on their topic lists. 
+
+Thus the composite score of a given story topic is indicative of the quantity and quality of the visual media items relating to this story topic. A story topic having a high composite score e.g. higher than other composite scores or higher than a threshold is regarded as having sufficient suitable visual media for successfully generating a video clip.
+
+The process of steps above is typically repeated continuously by unit . In parallel video creation unit carries out a process of selecting story topics and creating video clips as described in steps below. Unit uses the topic table described above as input possibly in combination with additional inputs.
+
+At a candidate identification step video generation unit selects one or more story topics as candidates for video clip creation. Unit typically chooses the story topics having the highest composite scores e.g. higher than other composite scores or higher than a threshold .
+
+At a presentation step unit presents the candidate story topics to moderator using GUI unit . GUI unit accepts the moderator input which chooses which candidate story topics are to be used for automated video clip generation. Unit then generates video clips for the story topics that the moderator selected. Unit generates the video clip for a given story topic using the visual media items belonging to the cluster of that story topic.
+
+In various embodiments depending on the scores and ranks used unit may suggest to the moderator story topics whose social media popularity currently meets a predefined criterion story topics whose number of associated visual media items currently meets a predefined criterion story topics that are currently exhibiting a shift in average sentiment or story topics having any other suitable kind of preference.
+
+In some embodiments having selected a story topic moderator may search for textual content to be used for narration of the video clip or write the narration text himself. Textual content may be imported for example from Web site links from RSS feeds or from any other suitable source. After obtaining the textual content unit may enrich the video clip by searching for additional visual content.
+
+Additionally or alternatively when unit already possesses textual stories e.g. articles it may match such textual stories to the visual media items and use the matching stories in the video clip. For example unit may calculate similarity scores between the textual stories usually within a predefined time window and the media items.
+
+In various embodiments GUI unit may present the candidate story topics to moderator in various ways. In an example embodiment GUI unit presents to the moderator a display screen in which each candidate story topic is allocated a certain display area also referred to as a tile. The size of the tile allocated on the screen to a given story topic depends on the composite score of that story topic. Thus high scoring story topics will be allocated large portions of the screen whereas lower scoring story topics will be allocated smaller portions of the screen.
+
+In the present example story topic A has the highest composite score and therefore window A is allocated the largest screen area of the overall screen area . Topic B has the next highest composite score and therefore window B is allocated the next largest screen area of the overall screen area . Topics C and N in this example have lower composite scores and therefore windows C and N are allocated smaller screen areas 1 16 of the overall screen area each . In one embodiment the window area is indicative of the trendiness of the respective story topic.
+
+This sort of visualization enables the moderator to focus on the story topics having the most promising potential in terms of availability of visual media items and or social media popularity. Unit typically refreshes display in real time to reflect newly arriving media as well as changes in the composite scores of story topics.
+
+Unit may also display in a given window various parameters of the respective story topic in addition to displaying visual media items. Such parameters may comprise for example a current relevance score for the story topic the number of related media items received in a given time interval the sentiment trend over time or any other suitable parameter that may assist the moderator.
+
+The GUI typically enables the moderator to navigate in and between different story topics. For example clicking inside the window of a story topic can open a sub window that presents its sub topics. For each sub topic GUI unit may again display relevant parameters along with recent media items.
+
+Additionally or alternatively clicking inside the window of a story topic can lead the moderator to a list of relevant textual stories which the moderator can read and use in the video clip.
+
+In some embodiments the GUI enables the moderator to sort the media items of a given story topic by their ranks. This sort of presentation enables the moderator to view all media or recently arriving media and focus on specific media items of interest.
+
+It will be appreciated that the embodiments described above are cited by way of example and that the present invention is not limited to what has been particularly shown and described hereinabove. Rather the scope of the present invention includes both combinations and sub combinations of the various features described hereinabove as well as variations and modifications thereof which would occur to persons skilled in the art upon reading the foregoing description and which are not disclosed in the prior art. Documents incorporated by reference in the present patent application are to be considered an integral part of the application except that to the extent any terms are defined in these incorporated documents in a manner that conflicts with the definitions made explicitly or implicitly in the present specification only the definitions in the present specification should be considered.
+
