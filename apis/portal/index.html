@@ -2,7 +2,8 @@
 layout: none
 ---
 [{
-{% for post in site.posts %}
+  {% assign count = 1 %}  {% assign totalcount = 1 %}{% for post in site.posts %}{% if post.title contains 'database api' or post.abstract contains 'database api' or post.content contains 'database api' %}{% unless post_title == '' %}{% assign totalcount = totalcount | plus: 1 %}{% endunless %}{% endif %}{% endfor %}
+  {% for post in site.posts %}
   {% assign post_title = post.title | downcase %}
   {% assign post_abstract = post.abstract | downcase %}
   {% assign post_content = post.content | downcase %}
@@ -15,7 +16,7 @@ layout: none
       "abstract": "{{ post.abstract }}",
       "owner": "{{ post.owner }}",
       "owner_city": "{{ post.owner_city }}",
-      "owner_country": "{{ post.owner_country }}"{% if forloop.last != true %},{% endif %}
+      "owner_country": "{{ post.owner_country }}"{{ post.owner_country }}"{% if count < totalcount %},{% endif %}{% assign count = count | plus: 1 %}
     {% endunless %}
   {% endif %}
 {% endfor %}
