@@ -18,7 +18,7 @@ layout: none
       "owner": "{{ post.owner }}",
       "owner_city": "{{ post.owner_city }}",
       "owner_country": "{{ post.owner_country }}"
-      }{% if count < totalcount %},{% endif %}{% assign count = count | plus: 1 %}
+      }{% assign count = count | plus: 1 %}{% if count < totalcount %},{% endif %}
     {% endunless %}
   {% endif %}
 {% endfor %}
