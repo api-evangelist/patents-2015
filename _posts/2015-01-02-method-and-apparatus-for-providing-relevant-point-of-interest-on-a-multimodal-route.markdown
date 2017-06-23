@@ -1,5 +1,4 @@
 ---
-
 title: Method and apparatus for providing relevant point of interest on a multi-modal route
 abstract: An approach is provided for determining relevant point of interest for a user on a multi-modal route. The multi-modal route includes a plurality of segments that employ a plurality of modes of transport, and wherein the multi-modal route further includes a plurality of transition waypoints for transitioning between the plurality of segments. Then, one or more search results for the at least one search are determined. Subsequently, the one or more search results are a prioritized by determining at least one change in one or more locations of the plurality of transition waypoints that would result if the one or more search results were to be incorporated into the at least one multi-modal route.
 url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=09518831&OS=09518831&RS=09518831
@@ -208,4 +207,3 @@ An optionally incorporated SIM card carries for instance important information s
 Further one or more camera sensors may be incorporated onto the mobile station wherein the one or more camera sensors may be placed at one or more locations on the mobile station. Generally the camera sensors may be utilized to capture record and cause to store one or more still and or moving images e.g. videos movies etc. which also may comprise audio recordings.
 
 While the invention has been described in connection with a number of embodiments and implementations the invention is not so limited but covers various obvious modifications and equivalent arrangements which fall within the purview of the appended claims. Although features of the invention are expressed in certain combinations among the claims it is contemplated that these features can be arranged in any combination and order.
-
