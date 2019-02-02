@@ -1,4 +1,4 @@
-- title: API Definitions Patents - 2015
+- title: API Definitions Patents
   image: >-
     https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-patent-algorithms.png
   header: >-
@@ -6,7 +6,7 @@
     regular script running that downloads new patent filings, and looks through
     them for keywords like API, Application Programming Interface, Hypermedia,
     and other buzzwords for the sector. These are the patents I've found that
-    are related to this area of my research from 2015.
+    are related to this area of my research.
   footer: >-
     If you have any questions about these patents, or know of other patents that
     I should have listed here, please feel free to reach out and submit a Github
